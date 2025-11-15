@@ -296,11 +296,13 @@ html {
     position: relative;
     width: 100%;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: transform var(--thiepsinhnhat-transition-slow);
 }
 
 .thiepsinhnhat__card-inner--flipped {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 /* ===================================
@@ -318,6 +320,12 @@ html {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: transform var(--thiepsinhnhat-transition-slow),
+                opacity var(--thiepsinhnhat-transition-fast),
+                visibility 0s linear;
     overflow: hidden;
     box-shadow: var(--thiepsinhnhat-shadow-lg), 
                 0 0 100px rgba(212, 175, 55, 0.3);
@@ -582,7 +590,13 @@ html {
     border-radius: var(--thiepsinhnhat-radius-xl);
     padding: var(--thiepsinhnhat-spacing-xl);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--thiepsinhnhat-transition-slow),
+                opacity var(--thiepsinhnhat-transition-fast),
+                visibility 0s linear;
     box-shadow: var(--thiepsinhnhat-shadow-lg);
     overflow-y: auto;
     max-height: 90vh;
@@ -597,10 +611,14 @@ html {
 
 .thiepsinhnhat__card-inner--flipped .thiepsinhnhat__card-front {
     pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .thiepsinhnhat__card-inner--flipped .thiepsinhnhat__card-back {
     pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
 }
 
 .thiepsinhnhat__card-back-overlay {
@@ -853,7 +871,7 @@ html {
 .thiepsinhnhat__card-details-value {
     display: block;
     font-size: 1rem;
-    color: var(--thiepsinhnhat-color-light);
+    color: #ffffff !important;
     line-height: 1.6;
     font-style: normal;
 }
@@ -1737,8 +1755,8 @@ html {
                                         <span class="thiepsinhnhat__card-name-text" id="guestName" data-field="guest-name">Nguyễn Văn A</span>
                                     </h2>
                                     <p class="thiepsinhnhat__card-age">
-                                        <span class="thiepsinhnhat__card-age-label" style="color: #ffffff;" >Chúc mừng sinh nhật lần thứ</span>
-                                        <strong class="thiepsinhnhat__card-age-number" id="guestAge" style="color: #ffffff;" >16</strong>
+                                        <span class="thiepsinhnhat__card-age-label">Chúc mừng sinh nhật lần thứ</span>
+                                        <strong class="thiepsinhnhat__card-age-number" id="guestAge">16</strong>
                                     </p>
                                 </div>
                             </section>
@@ -1758,7 +1776,7 @@ html {
                                         </div>
                                         <div class="thiepsinhnhat__card-details-content">
                                             <span class="thiepsinhnhat__card-details-label">Ngày</span>
-                                            <time style="color: #ffffff;" class="thiepsinhnhat__card-details-value" 
+                                            <time class="thiepsinhnhat__card-details-value" 
                                                   datetime="2025-12-25" 
                                                   itemprop="startDate"
                                                   id="eventDateDisplay" data-field="date-display">
@@ -1776,7 +1794,7 @@ html {
                                         </div>
                                         <div class="thiepsinhnhat__card-details-content">
                                             <span class="thiepsinhnhat__card-details-label">Thời gian</span>
-                                            <span class="thiepsinhnhat__card-details-value" style="color: #ffffff;"  id="eventTimeRange" data-field="time">18:00 - 21:00</span>
+                                            <span class="thiepsinhnhat__card-details-value" id="eventTimeRange" data-field="time">18:00 - 21:00</span>
                                         </div>
                                     </div>
                                     
@@ -1789,7 +1807,7 @@ html {
                                         </div>
                                         <div class="thiepsinhnhat__card-details-content">
                                             <span class="thiepsinhnhat__card-details-label">Địa điểm</span>
-                                            <address class="thiepsinhnhat__card-details-value" itemprop="location" id="eventLocation"  data-field="location" style="color: #ffffff;" >
+                                            <address class="thiepsinhnhat__card-details-value" itemprop="location" id="eventLocation"  data-field="location">
                                                 The Garden Restaurant<br>
                                                 123 Nguyễn Huệ, Quận 1<br>
                                                 TP. Hồ Chí Minh
@@ -1839,9 +1857,9 @@ html {
                                                 <circle class="thiepsinhnhat__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
                                                 <circle class="thiepsinhnhat__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
                                             </svg>
-                                            <span class="thiepsinhnhat__countdown-value" id="days" style="color: #ffffff;" >00</span>
+                                            <span class="thiepsinhnhat__countdown-value" id="days">00</span>
                                         </div>
-                                        <span class="thiepsinhnhat__countdown-label" style="color: #ffffff;" >Ngày</span>
+                                        <span class="thiepsinhnhat__countdown-label">Ngày</span>
                                     </div>
                                     
                                     <div class="thiepsinhnhat__countdown-item">
@@ -1850,9 +1868,9 @@ html {
                                                 <circle class="thiepsinhnhat__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
                                                 <circle class="thiepsinhnhat__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
                                             </svg>
-                                            <span class="thiepsinhnhat__countdown-value" id="hours" style="color: #ffffff;" >00</span>
+                                            <span class="thiepsinhnhat__countdown-value" id="hours">00</span>
                                         </div>
-                                        <span class="thiepsinhnhat__countdown-label" style="color: #ffffff;" >Giờ</span>
+                                        <span class="thiepsinhnhat__countdown-label">Giờ</span>
                                     </div>
                                     
                                     <div class="thiepsinhnhat__countdown-item">
@@ -1861,9 +1879,9 @@ html {
                                                 <circle class="thiepsinhnhat__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
                                                 <circle class="thiepsinhnhat__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
                                             </svg>
-                                            <span class="thiepsinhnhat__countdown-value" id="minutes" style="color: #ffffff;" >00</span>
+                                            <span class="thiepsinhnhat__countdown-value" id="minutes">00</span>
                                         </div>
-                                        <span class="thiepsinhnhat__countdown-label" style="color: #ffffff;" >Phút</span>
+                                        <span class="thiepsinhnhat__countdown-label">Phút</span>
                                     </div>
                                     
                                     <div class="thiepsinhnhat__countdown-item">
@@ -1872,9 +1890,9 @@ html {
                                                 <circle class="thiepsinhnhat__countdown-circle-bg" cx="50" cy="50" r="45"></circle>
                                                 <circle class="thiepsinhnhat__countdown-circle-progress" cx="50" cy="50" r="45"></circle>
                                             </svg>
-                                            <span class="thiepsinhnhat__countdown-value" id="seconds" style="color: #ffffff;" >00</span>
+                                            <span class="thiepsinhnhat__countdown-value" id="seconds">00</span>
                                         </div>
-                                        <span class="thiepsinhnhat__countdown-label" style="color: #ffffff;" >Giây</span>
+                                        <span class="thiepsinhnhat__countdown-label">Giây</span>
                                     </div>
                                 </div>
                             </section>
@@ -1887,7 +1905,7 @@ html {
                                 </p>
                                 <button class="thiepsinhnhat__card-close" id="closeCard" aria-label="Đóng thiệp">
                                     <span class="thiepsinhnhat__card-close-icon">✕</span>
-                                    <span class="thiepsinhnhat__card-close-text" style="color: #ffffff;" >Đóng thiệp</span>
+                                    <span class="thiepsinhnhat__card-close-text">Đóng thiệp</span>
                                 </button>
                             </footer>
                             
@@ -1909,7 +1927,7 @@ html {
 
     <!-- Music Control -->
     <aside class="thiepsinhnhat__music">
-        <button class="thiepsinhnhat__music-button" id="musicToggle" aria-label="Bật/tắt nhạc nền">
+        <button class="thiepsinhnhat__music-button thiepsinhnhat__music-button--paused" id="musicToggle" aria-label="Bật/tắt nhạc nền" data-audio-src="./music/quangtaocaibuong.mp3">
             <span class="thiepsinhnhat__music-icon" id="musicIcon">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
@@ -1973,6 +1991,9 @@ const CONFIG = {
 const STATE = {
     isCardFlipped: false,
     isMusicPlaying: false,
+    audio: null,
+    playMusic: null,
+    pauseMusic: null,
     particles: [],
     confetti: [],
     shareUrl: '',
@@ -2221,6 +2242,11 @@ function initCardFlip() {
     DOM.openCard.addEventListener('click', () => {
         flipCard(true);
         createConfettiBurst();
+        if (typeof STATE.playMusic === 'function') {
+            STATE.playMusic().catch(error => {
+                console.warn('Không thể phát nhạc khi mở thiệp:', error);
+            });
+        }
     });
 
     DOM.closeCard.addEventListener('click', () => {
@@ -2304,22 +2330,75 @@ function initCountdown() {
 // Music Player
 // ===================================
 function initMusicPlayer() {
-    // Create audio element (optional - uncomment when you have music file)
-    // const audio = new Audio('path/to/birthday-music.mp3');
-    // audio.loop = true;
-    // audio.volume = 0.3;
+    if (!DOM.musicToggle || !DOM.musicButton) {
+        return;
+    }
 
-    DOM.musicToggle.addEventListener('click', () => {
-        STATE.isMusicPlaying = !STATE.isMusicPlaying;
+    const audioSrc = DOM.musicButton.dataset.audioSrc;
+    DOM.musicToggle.setAttribute('aria-pressed', 'false');
 
+    if (!audioSrc) {
+        console.warn('Không tìm thấy đường dẫn nhạc. Hãy gán data-audio-src cho nút nhạc.');
+        DOM.musicButton.classList.add('thiepsinhnhat__music-button--paused');
+        return;
+    }
+
+    STATE.audio = new Audio(audioSrc);
+    STATE.audio.loop = true;
+    STATE.audio.preload = 'auto';
+    STATE.audio.volume = 0.4;
+
+    const playMusic = async () => {
+        if (!STATE.audio || STATE.isMusicPlaying) {
+            return;
+        }
+
+        await STATE.audio.play();
+        STATE.isMusicPlaying = true;
+        DOM.musicButton.classList.remove('thiepsinhnhat__music-button--paused');
+        DOM.musicToggle.setAttribute('aria-pressed', 'true');
+    };
+
+    const pauseMusic = () => {
+        if (!STATE.audio || !STATE.isMusicPlaying) {
+            return;
+        }
+
+        STATE.audio.pause();
+        STATE.isMusicPlaying = false;
+        DOM.musicButton.classList.add('thiepsinhnhat__music-button--paused');
+        DOM.musicToggle.setAttribute('aria-pressed', 'false');
+    };
+
+    STATE.playMusic = async () => {
+        try {
+            await playMusic();
+        } catch (error) {
+            console.error('Không thể phát nhạc:', error);
+            pauseMusic();
+            throw error;
+        }
+    };
+
+    STATE.pauseMusic = pauseMusic;
+
+    DOM.musicToggle.addEventListener('click', async () => {
         if (STATE.isMusicPlaying) {
-            DOM.musicButton.classList.remove('thiepsinhnhat__music-button--paused');
-            // audio.play().catch(err => console.error('Audio play failed:', err));
-            console.log('Music playing...');
-        } else {
-            DOM.musicButton.classList.add('thiepsinhnhat__music-button--paused');
-            // audio.pause();
-            console.log('Music paused');
+            pauseMusic();
+            return;
+        }
+
+        try {
+            await playMusic();
+        } catch (error) {
+            console.error('Không thể phát nhạc:', error);
+            pauseMusic();
+        }
+    });
+
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            pauseMusic();
         }
     });
 }
@@ -2659,9 +2738,9 @@ async function init() {
         // Core features
         initCanvas();
         createDOMParticles();
+        initMusicPlayer();
         initCardFlip();
         initCountdown();
-        initMusicPlayer();
         
         // Enhancement features
         initMouseEffects();
