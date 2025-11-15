@@ -1723,7 +1723,7 @@ html {
                                         <div class="thiepsinhnhat__card-avatar-ring thiepsinhnhat__card-avatar-ring--1"></div>
                                         <div class="thiepsinhnhat__card-avatar-ring thiepsinhnhat__card-avatar-ring--2"></div>
                                         <div class="thiepsinhnhat__card-avatar-ring thiepsinhnhat__card-avatar-ring--3"></div>
-                                        <img src="https://i.pravatar.cc/300?img=12" 
+                                        <img data-field="avatar" src="https://i.pravatar.cc/300?img=12" 
                                             alt="Ảnh đại diện người sinh nhật" 
                                             class="thiepsinhnhat__card-avatar-image"
                                             id="guestAvatar"
@@ -1734,11 +1734,11 @@ html {
                                 
                                 <div class="thiepsinhnhat__card-name-section">
                                     <h2 class="thiepsinhnhat__card-name" itemprop="organizer">
-                                        <span class="thiepsinhnhat__card-name-text" id="guestName">Nguyễn Văn A</span>
+                                        <span class="thiepsinhnhat__card-name-text" id="guestName" data-field="guest-name">Nguyễn Văn A</span>
                                     </h2>
                                     <p class="thiepsinhnhat__card-age">
                                         <span class="thiepsinhnhat__card-age-label">Chúc mừng sinh nhật lần thứ</span>
-                                        <strong class="thiepsinhnhat__card-age-number" id="guestAge">25</strong>
+                                        <strong class="thiepsinhnhat__card-age-number" id="guestAge">16</strong>
                                     </p>
                                 </div>
                             </section>
@@ -1761,7 +1761,7 @@ html {
                                             <time class="thiepsinhnhat__card-details-value" 
                                                   datetime="2025-12-25" 
                                                   itemprop="startDate"
-                                                  id="eventDateDisplay">
+                                                  id="eventDateDisplay" data-field="date-display">
                                                 Thứ Sáu, 25 tháng 12, 2025
                                             </time>
                                         </div>
@@ -1776,7 +1776,7 @@ html {
                                         </div>
                                         <div class="thiepsinhnhat__card-details-content">
                                             <span class="thiepsinhnhat__card-details-label">Thời gian</span>
-                                            <span class="thiepsinhnhat__card-details-value" id="eventTimeRange">18:00 - 21:00</span>
+                                            <span class="thiepsinhnhat__card-details-value" id="eventTimeRange" data-field="time">18:00 - 21:00</span>
                                         </div>
                                     </div>
                                     
@@ -1789,7 +1789,7 @@ html {
                                         </div>
                                         <div class="thiepsinhnhat__card-details-content">
                                             <span class="thiepsinhnhat__card-details-label">Địa điểm</span>
-                                            <address class="thiepsinhnhat__card-details-value" itemprop="location" id="eventLocation">
+                                            <address class="thiepsinhnhat__card-details-value" itemprop="location" id="eventLocation"  data-field="location">
                                                 The Garden Restaurant<br>
                                                 123 Nguyễn Huệ, Quận 1<br>
                                                 TP. Hồ Chí Minh
@@ -1810,7 +1810,7 @@ html {
                                         </svg>
                                     </div>
                                     <blockquote class="thiepsinhnhat__card-message" itemprop="description">
-                                        <p class="thiepsinhnhat__card-message-text" id="guestMessage">
+                                        <p class="thiepsinhnhat__card-message-text" id="guestMessage" data-field="message">
                                             "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. 
                                             Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!"
                                         </p>
@@ -2699,5 +2699,98 @@ if (typeof module !== 'undefined' && module.exports) {
 }
 
     </script>
+    <script>
+  // Đọc dữ liệu từ invitations.json
+  fetch('invitations.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Không tải được invitations.json');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Lấy key guest từ URL: ?guest=van-mai
+      const params = new URLSearchParams(window.location.search);
+      const guestKeyFromUrl = params.get('guest');
+
+      // Nếu URL không có hoặc không khớp, dùng defaultGuest
+      const fallbackKey = data.defaultGuest;
+      const guestKey = (guestKeyFromUrl && data.guests[guestKeyFromUrl])
+        ? guestKeyFromUrl
+        : fallbackKey;
+
+      const guest = data.guests[guestKey];
+
+      // Cập nhật nội dung trang
+      // Ví dụ: tên, tuổi, ngày, giờ, địa điểm, lời nhắn, ảnh, meta...
+      // Bạn chỉnh lại selector cho đúng HTML của mình
+
+      // Tên khách
+      const nameEls = document.querySelectorAll('[data-field="guest-name"]');
+      nameEls.forEach(el => el.textContent = guest.name);
+
+      // Tuổi (nếu có dùng)
+      const ageEl = document.querySelector('[data-field="guest-age"]');
+      if (ageEl) {
+        ageEl.textContent = guest.age;
+      }
+
+      // Ngày hiển thị (chuỗi tiếng Việt)
+      const dateDisplayEl = document.querySelector('[data-field="date-display"]');
+      if (dateDisplayEl) {
+        dateDisplayEl.textContent = guest.dateDisplay;
+      }
+
+      // Giờ
+      const timeEl = document.querySelector('[data-field="time"]');
+      if (timeEl) {
+        timeEl.textContent = guest.time;
+      }
+
+      // Địa điểm (mảng nhiều dòng)
+      const locationEl = document.querySelector('[data-field="location"]');
+      if (locationEl && Array.isArray(guest.location)) {
+        locationEl.innerHTML = guest.location.join('<br>');
+      }
+
+      // Lời nhắn
+      const messageEl = document.querySelector('[data-field="message"]');
+      if (messageEl) {
+        messageEl.textContent = guest.message;
+      }
+
+      // Ảnh đại diện
+      const avatarEl = document.querySelector('[data-field="avatar"]');
+      if (avatarEl) {
+        avatarEl.src = guest.image;
+        avatarEl.alt = guest.name;
+      }
+
+      // Meta title / description cho share link
+      if (guest.metaTitle) {
+        document.title = guest.metaTitle;
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+        if (ogTitle) ogTitle.setAttribute('content', guest.metaTitle);
+        if (twitterTitle) twitterTitle.setAttribute('content', guest.metaTitle);
+      }
+
+      if (guest.metaDescription) {
+        const desc = document.querySelector('meta[name="description"]');
+        const ogDesc = document.querySelector('meta[property="og:description"]');
+        const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+        if (desc) desc.setAttribute('content', guest.metaDescription);
+        if (ogDesc) ogDesc.setAttribute('content', guest.metaDescription);
+        if (twitterDesc) twitterDesc.setAttribute('content', guest.metaDescription);
+      }
+
+      // TODO: nếu bạn có countdown thì ở đây đọc guest.countdownDate và khởi động lại đồng hồ
+    })
+    .catch(err => {
+      console.error(err);
+      // Có thể hiển thị thông báo lỗi nhẹ nhàng nếu muốn
+    });
+</script>
+
 </body>
 </html>
