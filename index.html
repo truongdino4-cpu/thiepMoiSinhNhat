@@ -2529,7 +2529,7 @@ async function loadInvitationData() {
     const slug = getInvitationSlug();
 
     try {
-        const response = await fetch('/data/invitations.json', { cache: 'no-store' });
+        const response = await fetch('data/invitations.json', { cache: 'no-store' });
         if (!response.ok) {
             throw new Error(`Không thể tải dữ liệu khách mời (HTTP ${response.status})`);
         }
