@@ -296,11 +296,13 @@ html {
     position: relative;
     width: 100%;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: transform var(--thiepsinhnhat-transition-slow);
 }
 
 .thiepsinhnhat__card-inner--flipped {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 /* ===================================
@@ -318,6 +320,7 @@ html {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     overflow: hidden;
     box-shadow: var(--thiepsinhnhat-shadow-lg), 
                 0 0 100px rgba(212, 175, 55, 0.3);
@@ -582,6 +585,7 @@ html {
     border-radius: var(--thiepsinhnhat-radius-xl);
     padding: var(--thiepsinhnhat-spacing-xl);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
     box-shadow: var(--thiepsinhnhat-shadow-lg);
     overflow-y: auto;
