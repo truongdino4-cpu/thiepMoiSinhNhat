@@ -321,6 +321,11 @@ html {
     align-items: center;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: transform var(--thiepsinhnhat-transition-slow),
+                opacity var(--thiepsinhnhat-transition-fast),
+                visibility 0s linear;
     overflow: hidden;
     box-shadow: var(--thiepsinhnhat-shadow-lg), 
                 0 0 100px rgba(212, 175, 55, 0.3);
@@ -587,6 +592,11 @@ html {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--thiepsinhnhat-transition-slow),
+                opacity var(--thiepsinhnhat-transition-fast),
+                visibility 0s linear;
     box-shadow: var(--thiepsinhnhat-shadow-lg);
     overflow-y: auto;
     max-height: 90vh;
@@ -601,10 +611,14 @@ html {
 
 .thiepsinhnhat__card-inner--flipped .thiepsinhnhat__card-front {
     pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .thiepsinhnhat__card-inner--flipped .thiepsinhnhat__card-back {
     pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
 }
 
 .thiepsinhnhat__card-back-overlay {
