@@ -28,7 +28,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/mai.png",
+    "image": "img/mai.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Văn Mãi",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Văn Mãi.",
     "sharePath": "index.html?guest=van-mai"
@@ -42,7 +42,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/duy.png",
+    "image": "img/duy.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Nguyễn Vũ Duy",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Nguyễn Vũ Duy.",
     "sharePath": "index.html?guest=nguyen-vu-duy"
@@ -56,7 +56,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/tran.png",
+    "image": "img/tran.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Khánh Trân",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Khánh Trân.",
     "sharePath": "index.html?guest=khanh-tran"
@@ -70,7 +70,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/linh.png",
+    "image": "img/linh.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Cá Linh",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Cá Linh.",
     "sharePath": "index.html?guest=ca-linh"
@@ -84,7 +84,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/thinh.png",
+    "image": "img/thinh.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Đức Thịnh",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Đức Thịnh.",
     "sharePath": "index.html?guest=duc-thinh"
@@ -98,7 +98,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/thanh.png",
+    "image": "img/thanh.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho A.Thạnh",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho A.Thạnh.",
     "sharePath": "index.html?guest=a-thanh"
@@ -112,7 +112,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/truc.JPG",
+    "image": "img/truc.JPG",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Túc",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Túc.",
     "sharePath": "index.html?guest=e-tuc"
@@ -126,7 +126,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/thu.JPG",
+    "image": "img/thu.JPG",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Anh Thư",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Anh Thư.",
     "sharePath": "index.html?guest=e-anh-thu"
@@ -140,7 +140,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/tho.JPG",
+    "image": "img/tho.JPG",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Thơ",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Thơ.",
     "sharePath": "index.html?guest=e-tho"
@@ -154,7 +154,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/thien.png",
+    "image": "img/thien.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Thiên",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Thiên.",
     "sharePath": "index.html?guest=e-thien"
@@ -168,7 +168,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/tai.jpg",
+    "image": "img/tai.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho Anh Tài",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Anh Tài.",
     "sharePath": "index.html?guest=anh-tai"
@@ -183,7 +183,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/khoa.jpg",
+    "image": "img/khoa.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Khoa",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Khoa.",
     "sharePath": "index.html?guest=e-khoa"
@@ -198,7 +198,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/kha.jpg",
+    "image": "img/kha.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Kha",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Kha.",
     "sharePath": "index.html?guest=e-kha"
@@ -214,7 +214,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/gam.jpg",
+    "image": "img/gam.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Gấm",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Gấm.",
     "sharePath": "index.html?guest=e-gam"
@@ -229,7 +229,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/bo.jpg",
+    "image": "img/bo.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho Bé Bơ",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Bé Bơ.",
     "sharePath": "index.html?guest=be-bo"
@@ -244,7 +244,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/nguyen.jpg",
+    "image": "img/nguyen.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho Jay Nguyen",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Jay Nguyen.",
     "sharePath": "index.html?guest=jay-nguyen"
@@ -259,7 +259,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../",
+    "image": "",
     "metaTitle": "Thiệp mời sinh nhật dành cho Thiên",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Thiên.",
     "sharePath": "index.html?guest=thien"
@@ -274,7 +274,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/thi.jpg",
+    "image": "img/thi.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho Thi",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Thi.",
     "sharePath": "index.html?guest=thi"
@@ -288,7 +288,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/khang.png",
+    "image": "img/khang.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Khang",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Khang.",
     "sharePath": "index.html?guest=khang"
@@ -303,7 +303,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/phuc.png",
+    "image": "img/phuc.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Trọng Phúc",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Trọng Phúc.",
     "sharePath": "index.html?guest=trong-phuc"
@@ -318,7 +318,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/tien.png",
+    "image": "img/tien.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho C.Tiên",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho C.Tiên.",
     "sharePath": "index.html?guest=c-tien"
@@ -333,7 +333,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/lai.jpg",
+    "image": "img/lai.jpg",
     "metaTitle": "Thiệp mời sinh nhật dành cho E.Lài",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho E.Lài.",
     "sharePath": "index.html?guest=e-lai"
