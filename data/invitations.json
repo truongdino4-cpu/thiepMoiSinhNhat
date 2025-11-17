@@ -302,7 +302,7 @@
     "time": "21:00",
     "location": ["Dzô 35k, 58 Hẻm 112 Đ. 3 Tháng 2, Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam"],
     "message": "Sự hiện diện của bạn là món quà tuyệt vời nhất cho ngày đặc biệt này. Hãy đến và cùng tôi tạo nên những kỷ niệm không thể quên!",
-    "image": "../img/thanhphong.png",
+    "image": "/img/thanhphong.png",
     "metaTitle": "Thiệp mời sinh nhật dành cho Thanh Phong",
     "metaDescription": "Thiệp mời sinh nhật được tạo riêng cho Thanh Phong.",
     "sharePath": "index.html?guest=thanh-phong"
