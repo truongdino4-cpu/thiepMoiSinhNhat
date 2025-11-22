@@ -4,9 +4,9 @@
     "yen-ngan": {
       "name": "Yến Ngân",
       "age": 18,
-      "countdownDate": "2025-11-23T19:00:00+07:00",
-      "dateISO": "2025-11-23",
-      "dateDisplay": "Chủ Nhật, 23 tháng 11, 2025",
+      "countdownDate": "2025-11-22T19:00:00+07:00",
+      "dateISO": "2025-11-22",
+      "dateDisplay": "Thứ Bảy, 22 tháng 11, 2025",
       "time": "19:00",
       "location": [
         "Đường số 1/183 Chu Văn An",
@@ -21,10 +21,10 @@
     },
     "phan-dung": {
       "name": "Phan Dũng",
-      "age": 29,
-      "countdownDate": "2025-11-23T19:00:00+07:00",
-      "dateISO": "2025-11-23",
-      "dateDisplay": "Chủ Nhật, 23 tháng 11, 2025",
+      "age": 18,
+      "countdownDate": "2025-11-22T19:00:00+07:00",
+      "dateISO": "2025-11-22",
+      "dateDisplay": "Thứ Bảy, 22 tháng 11, 2025",
       "time": "19:00",
       "location": [
         "Đường số 1/183 Chu Văn An",
@@ -40,9 +40,9 @@
     "thanh-thuy": {
       "name": "Thành Thụy",
       "age": 18,
-      "countdownDate": "2025-11-23T19:00:00+07:00",
-      "dateISO": "2025-11-23",
-      "dateDisplay": "Chủ Nhật, 23 tháng 11, 2025",
+      "countdownDate": "2025-11-22T19:00:00+07:00",
+      "dateISO": "2025-11-22",
+      "dateDisplay": "Thứ Bảy, 22 tháng 11, 2025",
       "time": "19:00",
       "location": [
         "Đường số 1/183 Chu Văn An",
@@ -57,10 +57,10 @@
     },
     "nhat-truong": {
       "name": "Nhật Trường",
-      "age": 28,
-      "countdownDate": "2025-11-23T19:00:00+07:00",
-      "dateISO": "2025-11-23",
-      "dateDisplay": "Chủ Nhật, 23 tháng 11, 2025",
+      "age": 18,
+      "countdownDate": "2025-11-22T19:00:00+07:00",
+      "dateISO": "2025-11-22",
+      "dateDisplay": "Thứ Bảy, 22 tháng 11, 2025",
       "time": "19:00",
       "location": [
         "Đường số 1/183 Chu Văn An",
