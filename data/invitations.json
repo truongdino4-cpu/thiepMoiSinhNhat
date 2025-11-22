@@ -72,6 +72,24 @@
       "metaTitle": "Thiệp mời sinh nhật từ Lê Minh Đức",
       "metaDescription": "Lời mời trân trọng gửi tới Nhật Trường.",
       "sharePath": "index.html?guest=nhat-truong"
+    },
+    "ngoc-luan": {
+      "name": "Ngọc Luân",
+      "age": 18,
+      "countdownDate": "2025-11-22T19:00:00+07:00",
+      "dateISO": "2025-11-22",
+      "dateDisplay": "Thứ Bảy, 22 tháng 11, 2025",
+      "time": "19:00",
+      "location": [
+        "Đường số 1/183 Chu Văn An",
+        "Phường 26, Bình Thạnh",
+        "Thành phố Hồ Chí Minh"
+      ],
+      "message": "Sự hiện diện của Ngọc Luân là món quà tuyệt vời nhất cho ngày sinh nhật của Đức. Hãy đến và cùng tạo nên những kỷ niệm không thể quên nhé!",
+      "image": "img/ngoc-luan.jpg",
+      "metaTitle": "Thiệp mời sinh nhật từ Lê Minh Đức",
+      "metaDescription": "Lời mời trân trọng gửi tới Ngọc Luân.",
+      "sharePath": "index.html?guest=ngoc-luan"
     }
   }
 }
